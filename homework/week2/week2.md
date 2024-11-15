@@ -1,4 +1,5 @@
 ### 同步fork仓库标签
+
 ```shell
 ~/Documents/LLM_PROJECT/PYTHON/ForkGitHubSentinel on  main ⌚ 10:27:17
 $ git remote add upstream git@github.com:DjangoPeng/GitHubSentinel.git   
@@ -42,7 +43,8 @@ From github.com:DjangoPeng/GitHubSentinel
 
 ```
 
-### 切换到0.3.2tag并且以此创建新的分支branch_v0.3.2 
+### 切换到0.3.2tag并且以此创建新的分支branch_v0.3.2
+
 ```shell
 ~/Documents/LLM_PROJECT/PYTHON/ForkGitHubSentinel on  main ⌚ 10:32:12
 $ git checkout -b branch_v0.3.1 v0.3.1                             
@@ -53,6 +55,15 @@ Switched to a new branch 'branch_v0.3.1'
 ```
 
 ### 安装requirements.txt相关依赖
+
+#### requirements依赖
+
+```text
+requests
+openai
+gradio
+loguru
+```
 
 ```shell
 $ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
