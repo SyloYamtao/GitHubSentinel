@@ -29,6 +29,7 @@ class LLM:
             response = self.client.chat.completions.create(
                 model="gpt-3.5-turbo",  # 指定使用的模型版本
                 messages=[
+                    {"role": "system", "content": "所有问题使用中文进行作答,最终输出的简报的格式应为markdown"},  # System Role提升报告质量和稳定性
                     {"role": "user", "content": prompt}  # 提交用户角色的消息
                 ]
             )
